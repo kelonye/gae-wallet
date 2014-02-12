@@ -1,0 +1,10 @@
+{
+  "name": "google-js-api",
+  "version": "latest",
+  "dependencies": {},
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js"
+  ],
+  "repo": "https://raw.github.com/kelonye/google-js-api"
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .buy-button {
+      }
+    </style>
+  </head>
+  <body>
+    <button class="buy-button" type="button">Purchase</button>
+    <script src='/public/public.js'></script>
+    <script type='text/javascript'>
+
+      require('google-js-api');
+
+      google.load('payments', '1.0', {
+        'packages': ['sandbox_config']
+      });
+      
+      function Payment(jwt){
+        var that = this;
+        google.payments.inapp.buy({
+          'jwt'     : jwt,
+          'success' : that.success.bind(that),
+          'failure' : that.failure.bind(that)
+        });
+      }
+
+      Payment.prototype.success = function(status) {
+        console.log(status);
+      };
+
+      Payment.prototype.failure = function(status) {
+        console.log(status);
+      };
+
+      var btn = document.querySelector('button');
+      btn.onclick = function(e){
+        new Payment('{{jwt_1}}')
+      }
+
+    </script>
+  </body>
+</html>

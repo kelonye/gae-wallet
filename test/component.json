@@ -1,0 +1,6 @@
+{
+  "name": "base",
+  "dependencies": {
+    "kelonye/google-js-api": "*"
+  }
+}

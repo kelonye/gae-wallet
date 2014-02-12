@@ -1,0 +1,7 @@
+
+*.pyc
+
+dist
+gae_wallet.egg-info
+test/lib
+public

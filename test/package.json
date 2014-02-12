@@ -1,0 +1,8 @@
+{
+  "name": "base",
+  "private": "true",
+  "license": "MIT",
+  "dependencies": {
+    "component-hooks": "*"
+  }
+}
