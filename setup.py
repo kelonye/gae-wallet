@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 setup(
     name='gae-wallet',
     version='0.0.1',
-    description='Pesapal NDB Model',
+    description='Google Wallet helper Model',
     author='Mitchel Kelonye',
     author_email='kelonyemitchel@gmail.com',
     url='https://github.com/kelonye/gae-wallet',
